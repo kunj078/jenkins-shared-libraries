@@ -7,7 +7,7 @@ def call(Map config = [:]) {
     def imageTag = config.imageTag ?: error("Image tag is required")
     def manifestsPath = config.manifestsPath ?: 'kubernetes'
     def gitCredentials = config.gitCredentials ?: 'git-creds'
-    def gitUserName = config.gitUserName ?: 'Jenkins CI'
+    def gitUserName = config.gitUserName ?: 'kunj078'
     def gitUserEmail = config.gitUserEmail ?: 'kunjkhimani13@gmail.com'
     
     echo "Updating Kubernetes manifests with image tag: ${imageTag}"
